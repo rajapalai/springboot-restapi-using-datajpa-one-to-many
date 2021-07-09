@@ -41,6 +41,23 @@ public class OrderController {
 	public Optional<Customer> getCustomerById(@PathVariable ("id") long customerId ) {
 		return customerRepository.findById(customerId);		
 	}
+//	@PutMapping("/{id}")
+//	public Customer updateCustomer(@RequestBody Customer customer,@PathVariable("id") long customerId) {
+//		Customer existing = this.customerRepository.findById(customerId)
+//					.orElseThrow(()->new UserNotFoundException("user not found sorry"));
+//		existing.setFirstName(customer.getFirstName());
+//		existing.setLastName(customer.getLastName());
+//		existing.setEmail(customer.getEmail());
+//		existing.setGender(customer.getGender());
+//		existing.setOrderdate(customer.getOrderdate());
+//		existing.setCityName(customer.getCityName());
+//		existing.setDistrict(customer.getDistrict());
+//		existing.setZipCode(customer.getZipCode());
+//		return customerRepository.save(existing);
+//				
+//	}
+
+
 
 	
 }
